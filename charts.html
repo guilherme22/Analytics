@@ -83,17 +83,7 @@
         <script src="assets/js/menu.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function (){
-               $.ajax({
-                    url: "http://localhost:63342/testeGrafico/chart.json",
-                    type:"GET",
-                    dataType:"json",
-                    statusCode:{
-                        200: function(data){
-                            console.log(data)
-                            charts(data);
-                        }
-                    }
-                })
+                appData.start()
 
         });
 
